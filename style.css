@@ -52,7 +52,7 @@ header h3 {
     padding: 20px;
     width: 650px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-size: 12px;
+    font-size: 18px;
 }
 
 /*Images*/
@@ -62,10 +62,17 @@ header h3 {
 }
 .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 40px;
 }
+/*Media Size Related to ensure images wont shrink*/
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: 1fr
+    }
+}
+
 .card-photo {
     background: #fff;
     border: 1px solid #ccc;
