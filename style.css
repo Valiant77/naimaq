@@ -1,7 +1,10 @@
-
 /*Body as a whole*/
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+}
+h1, h2, h3 {
+    color: #1e3a8a;
 }
 
 /*Header*/
@@ -10,7 +13,6 @@ header {
 }
 header h1 {
     font-size: 36px;
-    padding: 20px;
 }
 header h2 {
     font-size: 18px;
@@ -18,10 +20,19 @@ header h2 {
 header h3 {
     font-size: 12px;
 }
+.banner {
+    background: url('images/banner.png') center center / cover no-repeat;
+    height: 200px;
+}
+@media (max-width: 480px) {
+    .banner {
+        height: 180px;
+    }
+}
 
 /*FAQ*/
 .faq-section {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 .card-container {
@@ -29,7 +40,7 @@ header h3 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
 }
 .card {
     background-color: #f9f9f9;
@@ -42,8 +53,9 @@ header h3 {
 
 /*Confession*/
 .confession-section {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+    background: url('images/wave.svg');
 }
 .card-confession {
     background-color: #f9f9f9;
@@ -52,13 +64,20 @@ header h3 {
     padding: 20px;
     width: 650px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-size: 18px;
+    font-size: 12px;
 }
 
 /*Images*/
 .photo-section {
     padding: 40px;
     text-align: center;
+    background-color: #1e3a8a;
+}
+.photo-section h1 {
+    color: #fff;
+}
+.photo-section p {
+    color: white;
 }
 .photo-gallery {
     display: grid;
@@ -66,20 +85,18 @@ header h3 {
     gap: 20px;
     padding: 40px;
 }
-/*Media Size Related to ensure images wont shrink*/
 @media (max-width: 480px) {
     .photo-gallery {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 }
-
 .card-photo {
     background: #fff;
-    border: 1px solid #ccc;
+    border: 0px solid #dbeafe;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(30,58,138,0.1);
 }
 .card-photo img {
     width: 100%;
@@ -87,6 +104,7 @@ header h3 {
     display: block;
 }
 .card-photo p {
+    color: #1e3a8a;
     padding: 10px;
     font-size: 14px;
 }
@@ -94,8 +112,13 @@ header h3 {
 
 /*Footer*/
 footer {
-    padding-top: 40px;
+    padding: 10px;
     text-align: center;
+    color: #fff;
+    background-color: #3a486e;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer a {
+    color: #fff;
 }
