@@ -26,8 +26,7 @@ header h3 {
 }
 @media (max-width: 480px) {
     .banner {
-        height: 180px;
-        width: 480px;
+        width: 400px;
     }
 }
 
